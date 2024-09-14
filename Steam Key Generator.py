@@ -4,7 +4,7 @@ wordlist = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 
 dosya = open("Steam Key.txt", "w")
 
-g = int(input("Kaç tane üreteyim ? >> "))
+g = int(input("Kaç tane üreteyim ? >> 6"))
 
 
 print("Steam keyler üretilip bilgisayarınızda oluşturulan Steam Key.txt dosyasına kaydedilmektedir, eğer bitirmek istiyorsanız programı kapatın...")
@@ -12,4 +12,4 @@ def uret():
   for x in range(g):
     print(random.choice(wordlist) +  random.choice(wordlist) +  random.choice(wordlist) +  random.choice(wordlist) +  random.choice(wordlist) + "-" + random.choice(wordlist) +  random.choice(wordlist) +  random.choice(wordlist) +  random.choice(wordlist) +  random.choice(wordlist) + "-" + random.choice(wordlist) +  random.choice(wordlist) +  random.choice(wordlist) +  random.choice(wordlist) +  random.choice(wordlist),file = dosya, flush = True)
 
-uret()
+uret(6)
